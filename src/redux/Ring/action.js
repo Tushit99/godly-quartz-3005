@@ -10,7 +10,6 @@ export const getRing = ()=> async (dispatch) =>{
             dispatch({type: RING_DATA_SUCCESS, payload: e.data}) 
             return e.data; 
         }) 
-        console.log(res); 
     }
     catch(err){
         dispatch({type: RING_DATA_ERROR}) 
