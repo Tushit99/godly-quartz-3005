@@ -3,10 +3,10 @@ import { RING_DATA_ERROR, RING_DATA_LOADING, RING_DATA_SUCCESS } from "./actionT
 
 
 
-export const getRing = ()=> async (dispatch) =>{
+export const getRing = (param)=> async (dispatch) =>{
     try{
         dispatch({type: RING_DATA_LOADING})
-        let res = await axios.get("http://localhost:8080/rings").then((e)=>{ 
+        let res = await axios.get("http://localhost:8080/rings",param).then((e)=>{ 
             dispatch({type: RING_DATA_SUCCESS, payload: e.data}) 
             return e.data; 
         }) 

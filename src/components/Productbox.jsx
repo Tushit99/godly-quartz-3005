@@ -12,7 +12,7 @@ const Productbox = ({ image, name, price, strikePrice }) => {
 
     const deleveryDate = () => {
         setBtloading(true);
-        setTimeout(() => {
+        setTimeout(() => { 
             const date = new Date();
             const la = Math.round(Math.random() * 8) + 2
             console.log(la)
