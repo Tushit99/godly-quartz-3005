@@ -7,6 +7,7 @@
       "price": 51593,
       "strikePrice": 55105,
       "rating": 4.1,
+      "ringsize": 6 ,
       "type": "necklace",
       "id": 1
     },
@@ -17,6 +18,7 @@
       "price": 46199,
       "strikePrice": 46199,
       "rating": 5.1,
+      "ringsize": 9 ,
       "type": "ring",
       "id": 2
     },
@@ -27,6 +29,7 @@
       "price": 104856,
       "strikePrice": 104856,
       "rating": 5.5,
+      "ringsize": 10 ,
       "type": "bracelet",
       "id": 3
     },
@@ -37,6 +40,7 @@
       "price": 32456,
       "strikePrice": 36678,
       "rating": 4.2,
+      "ringsize": 5 ,
       "type": "earrings",
       "id": 4
     },
@@ -47,6 +51,7 @@
       "price": 58639,
       "strikePrice": 58639,
       "rating": 3.9,
+      "ringsize": 7 ,
       "type": "ring",
       "id": 5
     },
@@ -57,6 +62,7 @@
       "price": 54837,
       "strikePrice": 54837,
       "rating": 3.8,
+      "ringsize": 8 ,
       "type": "necklace",
       "id": 6
     },
@@ -67,6 +73,7 @@
       "price": 46017,
       "strikePrice": 46017,
       "rating": 4.3,
+      "ringsize": 6 ,
       "type": "necklace",
       "id": 7
     },
@@ -77,6 +84,7 @@
       "price": 33340,
       "strikePrice": 33340,
       "rating": 4.4,
+      "ringsize": 9 ,
       "type": "earring",
       "id": 8
     },
@@ -87,6 +95,7 @@
       "price": 22726,
       "strikePrice": 22726,
       "rating": 4.7,
+      "ringsize": 7 ,
       "type": "bracelet",
       "id": 9
     },
@@ -97,6 +106,7 @@
       "price": 73016,
       "strikePrice": 73016,
       "rating": 5.3,
+      "ringsize": 10 ,
       "type": "earring",
       "id": 10
     },
@@ -107,6 +117,7 @@
       "price": 35563,
       "strikePrice": 35563,
       "rating": 4.1,
+      "ringsize": 5 ,
       "type": "ring",
       "id": 11
     },
@@ -117,6 +128,7 @@
       "price": 19314,
       "strikePrice": 19314,
       "rating": 4.3,
+      "ringsize": 8 ,
       "type": "ring",
       "id": 12
     },
@@ -127,6 +139,7 @@
       "price": 67967,
       "strikePrice": 67967,
       "rating": 5.4,
+      "ringsize": 6 ,
       "type": "earring",
       "id": 13
     },
@@ -137,6 +150,7 @@
       "price": 49658,
       "strikePrice": 49658,
       "rating": 5.4,
+      "ringsize": 5 ,
       "type": "ring",
       "id": 14
     },
@@ -147,6 +161,7 @@
       "price": 58358,
       "strikePrice": 58358,
       "rating": 4.5,
+      "ringsize": 8 ,
       "type": "earring",
       "id": 15
     },
@@ -157,6 +172,7 @@
       "price": 78549,
       "strikePrice": 78549,
       "rating": 4.6,
+      "ringsize": 9 ,
       "type": "earring",
       "id": 16
     },
@@ -167,6 +183,7 @@
       "price": 93935,
       "strikePrice": 93935,
       "rating": 5.6,
+      "ringsize": 10 ,
       "type": "necklace",
       "id": 17
     },
@@ -177,6 +194,7 @@
       "price": 71191,
       "strikePrice": 71191,
       "rating": 4.6,
+      "ringsize": 5 ,
       "type": "earring",
       "id": 18
     },
@@ -187,6 +205,7 @@
       "price": 75925,
       "strikePrice": 75925,
       "rating": 5,
+      "ringsize": 6 ,
       "type": "necklace",
       "id": 19
     },
@@ -197,6 +216,7 @@
       "price": 93941,
       "strikePrice": 93941,
       "rating": 5.5,
+      "ringsize": 8 ,
       "type": "earring",
       "id": 20
     },
@@ -207,6 +227,7 @@
       "price": 71308,
       "strikePrice": 71308,
       "rating": 4.7,
+      "ringsize": 7 ,
       "type": "earring",
       "id": 21
     },
@@ -217,6 +238,7 @@
       "price": 13677,
       "strikePrice": 13677,
       "rating": 3.5,
+      "ringsize": 10 ,
       "type": "earring",
       "id": 22
     },
@@ -227,6 +249,7 @@
       "price": 24518,
       "strikePrice": 24518,
       "rating": 4.9,
+      "ringsize": 9 ,
       "type": "necklace",
       "id": 23
     },
@@ -237,6 +260,7 @@
       "price": 35574,
       "strikePrice": 35574,
       "rating": 4.3,
+      "ringsize": 7 ,
       "type": "necklace",
       "id": 24
     }
@@ -248,6 +272,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 36405,
       "strikePrice": 36405,
+      "ringsize": 6 ,
       "rating": 5.2,
       "type": "ring",
       "id": 2
@@ -258,6 +283,7 @@
       "discription": "",
       "price": 31376,
       "strikePrice": 31376,
+      "ringsize": 10 ,
       "rating": 4.9,
       "type": "ring",
       "id": 3
@@ -268,6 +294,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 40315,
       "strikePrice": 40315,
+      "ringsize": 5 ,
       "rating": 4.8,
       "type": "ring",
       "id": 4
@@ -278,6 +305,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 61643,
       "strikePrice": 61643,
+      "ringsize": 9 ,
       "rating": 5.1,
       "type": "ring",
       "id": 5
@@ -288,6 +316,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 43363,
       "strikePrice": 43363,
+      "ringsize": 6 ,
       "rating": 4.6,
       "type": "ring",
       "id": 6
@@ -298,6 +327,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 68252,
       "strikePrice": 70728,
+      "ringsize": 8 ,
       "rating": 4.9,
       "type": "ring",
       "id": 7
@@ -308,6 +338,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 60744,
       "strikePrice": 60744,
+      "ringsize": 8 ,
       "rating": 5,
       "type": "ring",
       "id": 8
@@ -318,6 +349,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 277787,
       "strikePrice": 277787,
+      "ringsize": 10 ,
       "rating": 6,
       "type": "ring",
       "id": 9
@@ -328,6 +360,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 45996,
       "strikePrice": 45996,
+      "ringsize": 9 ,
       "rating": 4.3,
       "type": "ring",
       "id": 10
@@ -338,6 +371,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 52821,
       "strikePrice": 52821,
+      "ringsize": 7 ,
       "rating": 4.4,
       "type": "ring",
       "id": 11
@@ -348,6 +382,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 87098,
       "strikePrice": 87098,
+      "ringsize": 9 ,
       "rating": 5.2,
       "type": "ring",
       "id": 12
@@ -358,6 +393,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 20280,
       "strikePrice": 20280,
+      "ringsize": 5 ,
       "rating": 3.8,
       "type": "ring",
       "id": 13
@@ -368,6 +404,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 24260,
       "strikePrice": 24260,
+      "ringsize": 7 ,
       "rating": 4.5,
       "type": "ring",
       "id": 14
@@ -378,6 +415,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 25738,
       "strikePrice": 25738,
+      "ringsize": 7 ,
       "rating": 4.8,
       "type": "ring",
       "id": 15
@@ -388,6 +426,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 27858,
       "strikePrice": 27858,
+      "ringsize": 9 ,
       "rating": 4.3,
       "type": "ring",
       "id": 16
@@ -398,6 +437,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 26133,
       "strikePrice": 26133,
+      "ringsize": 8 ,
       "rating": 4.1,
       "type": "ring",
       "id": 17
@@ -408,6 +448,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 54298,
       "strikePrice": 57536 ,
+      "ringsize": 5 ,
       "rating": 4,
       "type": "ring",
       "id": 18
@@ -418,6 +459,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 23536,
       "strikePrice": 23536,
+      "ringsize": 6 ,
       "rating": 5.1,
       "type": "ring",
       "id": 19
@@ -428,6 +470,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 27743,
       "strikePrice": 27743,
+      "ringsize": 10 ,
       "rating": 4.7,
       "type": "ring",
       "id": 20
@@ -438,6 +481,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 28134,
       "strikePrice": 28134,
+      "ringsize": 9 ,
       "rating": 5,
       "type": "ring",
       "id": 21
@@ -448,6 +492,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 11852,
       "strikePrice": 11852,
+      "ringsize": 7 ,
       "rating": 4.4,
       "type": "ring",
       "id": 22
@@ -458,6 +503,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 12773,
       "strikePrice": 12773,
+      "ringsize": 6 ,
       "rating": 3.7,
       "type": "ring",
       "id": 23
@@ -468,6 +514,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 12060,
       "strikePrice": 12060,
+      "ringsize": 9 ,
       "rating": 3.2,
       "type": "ring",
       "id": 24
@@ -478,6 +525,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 11031,
       "strikePrice": 11031,
+      "ringsize": 7 ,
       "rating": 3.6,
       "type": "ring",
       "id": 25
@@ -488,6 +536,7 @@
       "discription": "Aayati Classic Diamond Ring",
       "price": 64631,
       "strikePrice": 64631,
+      "ringsize": 10 ,
       "rating": 5,
       "type": "ring",
       "id": 26
@@ -500,6 +549,7 @@
       "discription": "Set in 14 KT Rose Gold(5.560 g) with diamonds (0.460 ct ,IJ-SI)",
       "price": 36812,
       "strikePrice": 36812,
+      "ringsize": 5 ,
       "rating": 3.8,
       "type": "earring",
       "id": 1
@@ -510,6 +560,7 @@
       "discription": "Set in 14 KT Rose Gold(5.560 g) with diamonds (0.460 ct ,IJ-SI)",
       "price": 119175,
       "strikePrice": 119175,
+      "ringsize": 9 ,
       "rating": 5.5,
       "type": "earring",
       "id": 2
@@ -520,6 +571,7 @@
       "discription": "Set in 14 KT Rose Gold(5.560 g) with diamonds (0.460 ct ,IJ-SI)",
       "price": 42283,
       "strikePrice": 42283,
+      "ringsize": 10 ,
       "rating": 4.1,
       "type": "earring",
       "id": 3
@@ -530,6 +582,7 @@
       "discription": "Set in 14 KT Yellow Gold(3.470 g) with diamonds (0.323 ct ,GH-SI)",
       "price": 60575,
       "strikePrice": 60575,
+      "ringsize": 8 ,
       "rating": 4.3,
       "type": "earring",
       "id": 4
@@ -540,6 +593,7 @@
       "discription": "Set in 14 KT Yellow Gold(3.470 g) with diamonds (0.323 ct ,GH-SI)",
       "price": 42765,
       "strikePrice": 42765,
+      "ringsize": 7 ,
       "rating": 4.2,
       "type": "earring",
       "id": 5
@@ -550,6 +604,7 @@
       "discription": "Set in 14 KT Yellow Gold(3.470 g) with diamonds (0.323 ct ,GH-SI)",
       "price": 46001,
       "strikePrice": 46001,
+      "ringsize": 9 ,
       "rating": 3.8,
       "type": "earring",
       "id": 6
@@ -560,6 +615,7 @@
       "discription": "Set in 14 KT Rose Gold(0.870 g) with diamonds (0.033 ct ,IJ-SI)",
       "price": 8968,
       "strikePrice": 8968,
+      "ringsize": 10 ,
       "rating": 3.4,
       "type": "earring",
       "id": 7
@@ -570,6 +626,7 @@
       "discription": "Set in 14 KT Rose Gold(0.870 g) with diamonds (0.033 ct ,IJ-SI)",
       "price": 57353,
       "strikePrice": 57353,
+      "ringsize": 9 ,
       "rating": 4.7,
       "type": "earring",
       "id": 8
@@ -580,6 +637,7 @@
       "discription": "Set in 14 KT Rose Gold(0.870 g) with diamonds (0.033 ct ,IJ-SI)",
       "price": 98033,
       "strikePrice": 98033,
+      "ringsize": 6 ,
       "rating": 5.3,
       "type": "earring",
       "id": 9
@@ -590,6 +648,7 @@
       "discription": "Set in 14 KT Rose Gold(0.870 g) with diamonds (0.033 ct ,IJ-SI)",
       "price": 22675,
       "strikePrice": 22675,
+      "ringsize": 5 ,
       "rating": 4,
       "type": "earring",
       "id": 10
@@ -600,6 +659,7 @@
       "discription": "Set in 14 KT Rose Gold(0.870 g) with diamonds (0.033 ct ,IJ-SI)",
       "price": 22272,
       "strikePrice": 22272,
+      "ringsize": 7 ,
       "rating": 3.9,
       "type": "earring",
       "id": 11
@@ -610,6 +670,7 @@
       "discription": "Set in 14 KT Rose Gold(0.870 g) with diamonds (0.033 ct ,IJ-SI)",
       "price": 52909,
       "strikePrice": 52909,
+      "ringsize": 7 ,
       "rating": 4.6,
       "type": "earring",
       "id": 12
@@ -620,6 +681,7 @@
       "discription": "Set in 14 KT Rose Gold(0.870 g) with diamonds (0.033 ct ,IJ-SI)",
       "price": 54299,
       "strikePrice": 54299,
+      "ringsize": 9 ,
       "rating": 4.8,
       "type": "earring",
       "id": 13
@@ -630,6 +692,7 @@
       "discription": "Set in 14 KT Rose Gold(0.870 g) with diamonds (0.033 ct ,IJ-SI)",
       "price": 52256,
       "strikePrice": 56343,
+      "ringsize": 8 ,
       "rating": 3.7,
       "type": "earring",
       "id": 14
@@ -640,6 +703,7 @@
       "discription": "Set in 14 KT Rose Gold(0.870 g) with diamonds (0.033 ct ,IJ-SI)",
       "price": 47242,
       "strikePrice": 47242,
+      "ringsize": 5 ,
       "rating": 4.5,
       "type": "earring",
       "id": 15
@@ -650,6 +714,7 @@
       "discription": "Set in 18 KT Yellow Gold(2.380 g)",
       "price": 18735,
       "strikePrice": 18735,
+      "ringsize": 10 ,
       "rating": 3.2,
       "type": "earring",
       "id": 16
@@ -660,6 +725,7 @@
       "discription": "Set in 18 KT Yellow Gold(2.380 g)",
       "price": 43160,
       "strikePrice": 43160,
+      "ringsize": 8 ,
       "rating": 4.4,
       "type": "earring",
       "id": 17
@@ -670,6 +736,7 @@
       "discription": "Set in 18 KT Yellow Gold(2.380 g)",
       "price": 25225,
       "strikePrice": 25225,
+      "ringsize": 10 ,
       "rating": 3.5,
       "type": "earring",
       "id": 18
@@ -680,6 +747,7 @@
       "discription": "Set in 18 KT Yellow Gold(2.380 g)",
       "price": 58312,
       "strikePrice": 58312,
+      "ringsize": 5 ,
       "rating": 5.1,
       "type": "earring",
       "id": 19
@@ -690,6 +758,7 @@
       "discription": "Set in 18 KT Yellow Gold(2.380 g)",
       "price": 47514,
       "strikePrice": 47514,
+      "ringsize": 5 ,
       "rating": 4.5,
       "type": "earring",
       "id": 20
@@ -700,6 +769,7 @@
       "discription": "Set in 18 KT Yellow Gold(2.380 g)",
       "price": 72567,
       "strikePrice": 72567,
+      "ringsize": 8 ,
       "rating": 5.7,
       "type": "earring",
       "id": 21
@@ -710,6 +780,7 @@
       "discription": "Set in 18 KT Yellow Gold(2.380 g)",
       "price": 76263,
       "strikePrice": 76263,
+      "ringsize": 9 ,
       "rating": 5.8,
       "type": "earring",
       "id": 22
@@ -720,6 +791,7 @@
       "discription": "Set in 18 KT Yellow Gold(2.380 g)",
       "price": 102523,
       "strikePrice": 102523,
+      "ringsize": 10 ,
       "rating": 6.2,
       "type": "earring",
       "id": 23
@@ -730,6 +802,7 @@
       "discription": "Set in 18 KT Yellow Gold(2.380 g)",
       "price": 64230,
       "strikePrice": 64230,
+      "ringsize": 6 ,
       "rating": 5.9,
       "type": "earring",
       "id": 24
@@ -740,6 +813,7 @@
       "discription": "Set in 18 KT Yellow Gold(2.380 g)",
       "price": 62456,
       "strikePrice": 68435,
+      "ringsize": 8 ,
       "rating": 5.6,
       "type": "earring",
       "id": 25
@@ -750,6 +824,7 @@
       "discription": "Set in 14 KT Yellow Gold(3.160 g) with diamonds (0.250 ct ,IJ-SI)",
       "price": 41845,
       "strikePrice": 41845,
+      "ringsize": 9 ,
       "rating": 5.1,
       "type": "earring",
       "id": 26
