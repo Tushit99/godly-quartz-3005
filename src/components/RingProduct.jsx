@@ -1,29 +1,42 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useLocation, useSearchParams } from "react-router-dom";
 import { getRing } from "../redux/Ring/action";
 import Productbox from "./Productbox";
-import style from "./Productpage.module.css"
+import style from "./Productpage.module.css";
 import Sorting from "./Sorting";
 
 const RingProduct = () => {
     const store = useSelector((state) => state.ringReducer.ring);
     const dispatch = useDispatch();
+    const location = useLocation();
+    const [serchParams] = useSearchParams();
+
+    let obj = {
+        params: {
+            ringsize: serchParams.getAll("category"), 
+        },
+    };
 
     useEffect(() => {
-        dispatch(getRing());  
-    }, [])
-    
+        dispatch(getRing(obj));
+    }, [location.search]);
 
-    return <div className={style.container}>
+    return (
         <div>
-            <Sorting /> 
+            <img width={"100%"} src="https://banner.caratlane.com/live-images/10c2cf82f2ad425b960f2587933652a7.jpg" alt="" />
+            <div className={style.container}>
+                <div className={style.sort}>
+                    <Sorting />
+                </div>
+                <div className={style.detail}>
+                    {store.map((e) => (
+                        <Productbox key={e.id} {...e} />
+                    ))}
+                </div>
+            </div>
         </div>
-        <div className={style.detail}>
-            {store.map((e) => (
-                <Productbox key={e.id} {...e} />
-            ))} 
-        </div>
-    </div>;
+    );
 };
 
 export default RingProduct;
