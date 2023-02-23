@@ -40,7 +40,7 @@ import { MdShoppingBasket } from "react-icons/md";
 import { BiHomeCircle } from "react-icons/bi";
 import { IoStorefrontSharp } from "react-icons/io5";
 import { Link } from "react-router-dom"; 
-import img from "./Img/logo.png"
+import img from "../img/logo.png"
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
