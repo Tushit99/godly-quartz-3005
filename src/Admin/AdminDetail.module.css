@@ -24,6 +24,10 @@
     margin: 20px 0 0 0 ;
     justify-content: space-around;
     align-items: center;  
+} 
+
+.edbtn>*{
+  width: 100%; 
 }
 
 .imgbox {
