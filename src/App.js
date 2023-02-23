@@ -9,6 +9,7 @@ function App() {
       <Link to="/">home</Link>
       <Link to="/newarival">newarival</Link>  
       <Link to="/earring">Earring</Link>
+      <Link to="/cart">Cart</Link>
     </div>
       <MainRout /> 
     </div>
