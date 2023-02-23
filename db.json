@@ -830,19 +830,7 @@
       "id": 26
     }
   ],
-  "cart": [
-    {
-      "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE06879-1RP9P0_1_lar.jpg",
-      "name": "Eliene Pearl Drop Earrings",
-      "discription": "Set in 14 KT Rose Gold(0.870 g) with diamonds (0.033 ct ,IJ-SI)",
-      "price": 22675,
-      "strikePrice": 22675,
-      "ringsize": 5,
-      "rating": 4,
-      "type": "earring",
-      "id": 10
-    }
-  ],
+  "cart": [],
   "checkout": [
     {
       "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE07603-1YP6P0_1_lar.jpg",
