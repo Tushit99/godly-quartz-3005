@@ -830,7 +830,7 @@
       "id": 26
     }
   ],
-  "cart": [],
+  "cart": [], 
   "checkout": [
     {
       "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE07603-1YP6P0_1_lar.jpg",
@@ -841,7 +841,7 @@
       "ringsize": 5,
       "rating": 3.8,
       "type": "earring",
-      "id": 1
+      "id": 2
     },
     {
       "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE06879-1RP9P0_1_lar.jpg",
@@ -854,7 +854,7 @@
       "type": "earring",
       "id": 10,
       "isChecked": false,
-      "qty": 1
+      "qty": 5
     },
     {
       "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE06010-1YP900_1_lar.jpg",
@@ -867,7 +867,7 @@
       "type": "earring",
       "id": 26,
       "isChecked": false,
-      "qty": 1
+      "qty": 7
     }
   ]
 }
