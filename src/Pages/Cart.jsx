@@ -23,7 +23,7 @@ const Cart = () => {
 
 
   const fetchCartAPI = async () => {
-    let res = await axios.get(`http://localhost:8080/cart`);
+    let res = await axios.get(`https://tame-lime-hose.cyclic.app/cart`);
     const result = res?.data?.map((item) => {
       return {
         ...item,
