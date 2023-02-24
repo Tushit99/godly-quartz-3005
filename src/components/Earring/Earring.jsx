@@ -15,6 +15,8 @@ const Earring = () => {
     let obj = {
         params: {
             ringsize: serchParams.getAll("category"), 
+            _sort: serchParams.get("order") && "price", 
+            _order: serchParams.get("order")
         },
     };
 

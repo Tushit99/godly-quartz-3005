@@ -23,12 +23,12 @@ const AdminDetail = ({ detail, pageon, handleDelete }) => {
                         <h2> Rating: {e.rating} </h2>
                         <h2> Type of: {e.type} </h2>
                         <div className={style.edbtn}>
-                            <Button colorScheme='twitter' w="100%" variant='outline'>
-                                <Link to={`/`}>
+                            <Link to={`/admin/${pageon}/${e.id}`} >
+                                <Button colorScheme='twitter' width={"100%"} variant='outline'>
                                     Edit
-                                </Link>
-                            </Button>
-                            <Button colorScheme='twitter' w="100%" onClick={() => handleDelete(e.id, pageon)} variant='outline'>
+                                </Button>
+                            </Link>
+                            <Button colorScheme='twitter' onClick={() => handleDelete(e.id, pageon)} variant='outline'>
                                 Delete
                             </Button>
                         </div>

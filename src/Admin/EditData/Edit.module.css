@@ -1,0 +1,49 @@
+
+.formtop > form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  border: 2px solid rgb(5, 142, 255);
+  border-radius: 10px;
+  width: 600px;
+  margin: 30px auto;
+  padding: 20px; 
+} 
+
+form>div{
+    display: grid; 
+} 
+
+form label{
+    text-align: left; 
+    font-size: large; 
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.formtop input {
+  border: 1.5px solid rgb(116, 188, 248);
+  padding: 6px 10px;
+  font-size: large;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 100px) and (max-width: 800px) {
+  .formtop > form {
+    display: grid;
+    padding: 20px; 
+    grid-template-columns: repeat(1,1fr);
+    border: 2px solid rgb(5, 142, 255);
+    width: 300px;
+    margin: 30px auto;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+  .formtop input {
+    border: 1.5px solid rgb(116, 188, 248);
+    padding: 6px 10px;
+    font-size: large;
+    border-radius: 10px;
+  }
+}
