@@ -50,10 +50,10 @@ const Navbar = () => {
       <Box
         boxShadow={"lg"}
         bg={useColorModeValue("#1A365D", "#1A365D")}
-        h={"20px"}
+        h={"20px"}  
         position="fixed"
-      ></Box>
-      <Box w={"100%"} position="fixed" top={0} zIndex={"10"}>
+      ></Box> 
+      <Box w={"100%"} position="fixed" top={0} zIndex={"10"}> 
         <Flex
           boxShadow="lg"
           p="2"

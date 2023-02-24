@@ -39,7 +39,7 @@ const Sorting = () => {
     <div>
       {/* top bar */}
       <div className={style.topsort}>
-        <h1> Sorting box </h1>
+        {/* <h1> Sorting box </h1> */}
       </div> 
       {/* side bar  */}
       <div className={style.head}>
