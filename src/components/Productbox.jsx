@@ -29,7 +29,7 @@ const Productbox = ({ image, name, price, strikePrice }) => {
         <SkeletonTheme baseColor="#313131" highlightColor="#525252" >
             <div className={style.box}>
                 <div className={style.imgbox}>
-                    <img className={style.proimg || <Skeleton count={1} />} src={image} alt="product-img" />
+                    <img className={style.proimg} src={image} alt="product-img" />
                 </div>  
                 <div className={style.pricebox}>
                     <h2>₹{price || <Skeleton count={1} />}</h2>

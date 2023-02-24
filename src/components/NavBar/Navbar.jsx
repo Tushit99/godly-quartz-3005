@@ -40,20 +40,20 @@ import { MdShoppingBasket } from "react-icons/md";
 import { BiHomeCircle } from "react-icons/bi";
 import { IoStorefrontSharp } from "react-icons/io5";
 import { Link } from "react-router-dom"; 
-import img from "../img/logo.png"
+import img from "../img/logo.png"  
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <>
+    <div>
       <Box
         boxShadow={"lg"}
         bg={useColorModeValue("#1A365D", "#1A365D")}
-        h={"20px"}  
+        h={"20px"}
         position="fixed"
-      ></Box> 
-      <Box w={"100%"} position="fixed" top={0} zIndex={"10"}> 
+      ></Box>
+      <Box w={"100%"} position="fixed" top={0} zIndex={"10"}>
         <Flex
           boxShadow="lg"
           p="2"
@@ -80,7 +80,7 @@ const Navbar = () => {
               justifyContent="space-around"
               alignItems={"center"}
             >
-              <Box>
+              <Box >
                 <Image
                   w={{ base: "80px", md: "150px" }} 
                   src={img}
@@ -576,7 +576,7 @@ const Navbar = () => {
           </>
         )}
       </Box>
-    </>
+    </div>
   );
 };
 

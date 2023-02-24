@@ -8,7 +8,7 @@ import AdminDetail from './AdminDetail';
 import style from "./Admin.module.css"
 import axios from 'axios';
 
-const Admin = () => { 
+const Admin = () => {
     const data1 = useSelector((state) => state.earReducer.earring);
     const data2 = useSelector((state) => state.arivalReducer.newArival);
     const data3 = useSelector((state) => state.ringReducer.ring);
@@ -20,8 +20,9 @@ const Admin = () => {
     const [price, setPrice] = useState("");
     const [strikePrice, setStrikePrice] = useState("");
     const [rating, setrating] = useState("");
-    const [type, setType] = useState(""); 
-    const [ringsize, setRingsize] = useState(""); 
+    const [type, setType] = useState("");
+    const [ringsize, setRingsize] = useState("");
+    const [pushto, setPushto] = useState("arivals")
 
 
     const handleSubmit = async (e) => {
@@ -30,40 +31,40 @@ const Admin = () => {
             image,
             name,
             discription: "Set in 14 KT Yellow Gold(3.160 g) with diamonds (0.250 ct ,IJ-SI)",
-            price: +price, 
+            price: +price,
             strikePrice: +price,
-            ringsize: +ringsize ,
-            rating: +rating ,
+            ringsize: +ringsize,
+            rating: +rating,
             type: "earring",
         };
         let res = await axios
-            .post("http://localhost:8080/earrings", obj) 
+            .post(`http://localhost:8080/${pushto}`, obj)
         console.log(res);
         setImage("");
         setName("");
         setDiscription("");
         setPrice("");
-        setRingsize(""); 
+        setRingsize("");
         setrating("");
-        setType(""); 
-        setStrikePrice("");    
-        dispatch(getNewarival());
-        dispatch(getEaring());
-        dispatch(getRing());  
-    }; 
+        setType("");
+        setStrikePrice("");
+        runAll();
+    };
 
-    const handleDelete = async (id,name) => {
-        let x = await axios.delete(`http://localhost:8080/${name}/${id}`); 
-        dispatch(getNewarival());
-        dispatch(getEaring());
-        dispatch(getRing());  
-        console.log(x); 
-    }  
-    
-    useEffect(() => {
+    const handleDelete = async (id, name) => { 
+            let x = await axios.delete(`http://localhost:8080/${name}/${id}`);
+            runAll();
+            console.log(x); 
+    }
+
+    const runAll = () => {
         dispatch(getNewarival());
         dispatch(getEaring());
         dispatch(getRing());
+    }
+
+    useEffect(() => {
+        runAll();
     }, []);
 
     return (
@@ -96,19 +97,24 @@ const Admin = () => {
                             value={price}
                             placeholder="Enter price"
                             onChange={(e) => setPrice(e.target.value)}
-                        /> 
+                        />
                         <input
                             type="text"
                             value={ringsize}
                             placeholder="Enter ring size"
                             onChange={(e) => setRingsize(e.target.value)}
-                        /> 
+                        />
                         <input
                             type="text"
                             value={strikePrice}
                             placeholder="Enter striked price"
                             onChange={(e) => setStrikePrice(e.target.value)}
                         />
+                        <select onChange={(e) => setPushto(e.target.value)} >
+                            <option value="arivals" >New Arival</option>
+                            <option value="rings"> Ring </option>
+                            <option value="earrings"> Earring </option>
+                        </select>
                         <input
                             type="text"
                             value={rating}
@@ -140,7 +146,7 @@ const Admin = () => {
                             <AdminDetail detail={data2} pageon={"arivals"} handleDelete={handleDelete} />
                         </TabPanel>
                         <TabPanel>
-                            <AdminDetail detail={data3} pageon={"rings"} handleDelete={handleDelete} /> 
+                            <AdminDetail detail={data3} pageon={"rings"} handleDelete={handleDelete} />
                         </TabPanel>
                     </TabPanels>
                 </Tabs>

@@ -10,18 +10,19 @@ const Earring = () => {
     const store = useSelector((state) => state.earReducer.earring);
     const dispatch = useDispatch();
     const location = useLocation();
-    const [serchParams] = useSearchParams();
+    const [serchParams] = useSearchParams(); 
 
     let obj = {
         params: {
             ringsize: serchParams.getAll("category"), 
             _sort: serchParams.get("order") && "price", 
-            _order: serchParams.get("order")
+            _order: serchParams.get("order") 
         },
     };
 
     useEffect(() => {
-        dispatch(getEaring(obj));
+        dispatch(getEaring(obj)); 
+        
     }, [location.search]); 
 
     return ( 
@@ -30,7 +31,7 @@ const Earring = () => {
             <div className={style.container}>
                 <div className={style.sort}>
                     <Sorting />
-                </div>
+                </div> 
                 <div className={style.detail}>
                     {store.map((e) => (
                         <Productbox key={e.id} {...e} />

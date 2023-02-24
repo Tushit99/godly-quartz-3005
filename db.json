@@ -1,17 +1,6 @@
 {
   "arivals": [
     {
-      "image": "https://cdn.caratlane.com/media/catalog/product/J/L/JL04543-1RP900_1_lar.jpg",
-      "name": "Lasa Diamond Necklace",
-      "discription": "Set in 14 KT Rose Gold(3.580 g) with diamonds (0.310 ct ,IJ-SI)",
-      "price": 51593,
-      "strikePrice": 55105,
-      "rating": 4.1,
-      "ringsize": 6,
-      "type": "necklace",
-      "id": 1
-    },
-    {
       "image": "https://cdn.caratlane.com/media/catalog/product/J/R/JR07378-1RP900_5_lar.jpg",
       "name": "Aayati Classic Diamond Ring",
       "discription": "Aayati Classic Diamond Ring",
@@ -570,7 +559,7 @@
       "name": "Borja Diamond Stud Earrings",
       "discription": "Set in 14 KT Rose Gold(5.560 g) with diamonds (0.460 ct ,IJ-SI)",
       "price": 42283,
-      "strikePrice": 42283,
+      "strikePrice": 43463,
       "ringsize": 10,
       "rating": 4.1,
       "type": "earring",
@@ -592,7 +581,7 @@
       "name": "Meghraa Pearl Drop Earrings",
       "discription": "Set in 14 KT Yellow Gold(3.470 g) with diamonds (0.323 ct ,GH-SI)",
       "price": 42765,
-      "strikePrice": 42765,
+      "strikePrice": 43547,
       "ringsize": 7,
       "rating": 4.2,
       "type": "earring",
@@ -830,7 +819,19 @@
       "id": 26
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE06010-1YP900_1_lar.jpg",
+      "name": "earring",
+      "discription": "Set in 14 KT Yellow Gold(3.160 g) with diamonds (0.250 ct ,IJ-SI)",
+      "price": 44346,
+      "strikePrice": 46366,
+      "ringsize": 9,
+      "rating": 5.1,
+      "type": "earring",
+      "id": 26
+    }
+  ],
   "users": [
     {
       "firstName": "Shekhar",
@@ -852,6 +853,13 @@
       "Email": "abc@gmail.com",
       "Password": "12345678",
       "id": 3
+    },
+    {
+      "firstName": "Tushit",
+      "lastName": "Saxena",
+      "Email": "tushitsaxena3@gmail.com",
+      "Password": "qwerty12",
+      "id": 4
     }
   ],
   "checkout": [
@@ -891,6 +899,19 @@
       "id": 26,
       "isChecked": false,
       "qty": 7
+    },
+    {
+      "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE02419-YGP600_3_lar.jpg",
+      "name": "Trio Poire Diamond Drop Earrings",
+      "discription": "Set in 18 KT Yellow Gold(2.380 g)",
+      "price": 62456,
+      "strikePrice": 68435,
+      "ringsize": 8,
+      "rating": 5.6,
+      "type": "earring",
+      "id": 25,
+      "isChecked": false,
+      "qty": 1
     }
   ]
 }
