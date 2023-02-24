@@ -1,6 +1,12 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# lone of CaratLane website 
+
+CaratLane was founded, to give women access to modern, fine jewellery, that was also wearable everyday.
+Today CaratLane is India's largest omni-channel jeweller. CaratLane also has over 165 retail stores across 66+ Indian cities.
+
+
+
+
 
 ## Available Scripts
 
