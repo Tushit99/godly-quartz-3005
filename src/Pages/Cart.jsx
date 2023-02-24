@@ -7,7 +7,7 @@ import { deleteCartData, fetchCartData } from "../redux/cart/action";
 import PageNotFound from "./PageNotFound";
 // import PaymentNavbar from "../Components/PaymentNavbar";
 import { useNavigate } from "react-router-dom";
-import CartComponent from "../components/CartComponent";
+import CartComponent from "../components/Cart/CartComponent";
 import LoadingPage from "./LoadingPage";
 import { deleteCartAPI } from "../redux/cart/cart.api";
 import { postCheckoutData } from "../redux/Checkout/action";

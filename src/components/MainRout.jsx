@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Cart from '../Pages/Cart'
 import PageNotFound from '../Pages/PageNotFound'
+
 import Payment from '../Pages/Payment'
 import SignIn from '../Pages/SignIn/SignIn'
 import SignUp from '../Pages/SignIn/SignUp'
@@ -9,6 +10,12 @@ import Earring from './Earring'
 import Newarival from './Newarival'
 import PrivateRoute from './PrivateRoute'
 import RingProduct from './RingProduct'
+
+import Payment from '../Pages/Payment' 
+import Earring from './Earring/Earring'
+import Newarival from './Newarival/Newarival'
+import RingProduct from './Ring/RingProduct'
+
 
 const MainRout = () => {
   return (
@@ -19,10 +26,14 @@ const MainRout = () => {
         <Route path='/cart' element={<PrivateRoute><Cart/></PrivateRoute>} />
         <Route path='/payment' element={<PrivateRoute><Payment/></PrivateRoute>} />
         <Route path="*" element={<PageNotFound />}></Route>
+
         <Route path="/login" element={<SignIn/>} />
         <Route path="/signup" element={<SignUp/>} />
 
     </Routes>
+
+    </Routes> 
+
   )
 }
 

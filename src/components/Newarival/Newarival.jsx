@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useSearchParams } from 'react-router-dom';
-import { getEaring } from '../redux/Earring/action';
-import style from "./Earring.module.css" 
-import Productbox from './Productbox';
-import Sorting from './Sorting';
+import { getNewarival } from '../../redux/Newarival/action';
+import Productbox from '../Productbox';
+import Sorting from '../Sorting'; 
+import style from "./Newarival.module.css" 
 
-const Earring = () => {
-    const store = useSelector((state) => state.earReducer.earring);
+const Newarival = () => { 
+    const store = useSelector((state) => state.arivalReducer.newArival);
     const dispatch = useDispatch();
     const location = useLocation();
     const [serchParams] = useSearchParams();
@@ -19,12 +19,12 @@ const Earring = () => {
     };
 
     useEffect(() => {
-        dispatch(getEaring(obj));
+        dispatch(getNewarival(obj));
     }, [location.search]); 
 
     return ( 
         <div>
-            <img width={"100%"} src="https://banner.caratlane.com/live-images/4320a30823014770b49d6c35ba3508c9.jpg" alt="" />
+            <img width={"100%"} src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/02-FEB/AppBanner/Newin/01/Desktop_1920-x560_toplisting.jpg" alt="" />
             <div className={style.container}>
                 <div className={style.sort}>
                     <Sorting />
@@ -39,5 +39,4 @@ const Earring = () => {
     )
 }
 
-
-export default Earring  
+export default Newarival

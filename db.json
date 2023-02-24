@@ -830,6 +830,7 @@
       "id": 26
     }
   ],
+
   "cart": [],
   "checkout": [],
   "users": [
@@ -853,6 +854,46 @@
       "Email": "abc@gmail.com",
       "Password": "12345678",
       "id": 3
+=======
+  "cart": [], 
+  "checkout": [
+    {
+      "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE07603-1YP6P0_1_lar.jpg",
+      "name": "Moiz Pearl Drop Earrings",
+      "discription": "Set in 14 KT Rose Gold(5.560 g) with diamonds (0.460 ct ,IJ-SI)",
+      "price": 36812,
+      "strikePrice": 36812,
+      "ringsize": 5,
+      "rating": 3.8,
+      "type": "earring",
+      "id": 2
+    },
+    {
+      "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE06879-1RP9P0_1_lar.jpg",
+      "name": "Eliene Pearl Drop Earrings",
+      "discription": "Set in 14 KT Rose Gold(0.870 g) with diamonds (0.033 ct ,IJ-SI)",
+      "price": 22675,
+      "strikePrice": 22675,
+      "ringsize": 5,
+      "rating": 4,
+      "type": "earring",
+      "id": 10,
+      "isChecked": false,
+      "qty": 5
+    },
+    {
+      "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE06010-1YP900_1_lar.jpg",
+      "name": "Quint Linear Diamond Hoop Earrings",
+      "discription": "Set in 14 KT Yellow Gold(3.160 g) with diamonds (0.250 ct ,IJ-SI)",
+      "price": 41845,
+      "strikePrice": 41845,
+      "ringsize": 9,
+      "rating": 5.1,
+      "type": "earring",
+      "id": 26,
+      "isChecked": false,
+      "qty": 7
+
     }
   ]
 }

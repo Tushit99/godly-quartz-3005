@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useSearchParams } from "react-router-dom";
-import { getRing } from "../redux/Ring/action";
-import Productbox from "./Productbox";
+import { getRing } from "../../redux/Ring/action";
+import Productbox from "../Productbox";
 import style from "./Productpage.module.css";
-import Sorting from "./Sorting";
+import Sorting from "../Sorting";
 
 const RingProduct = () => {
     const store = useSelector((state) => state.ringReducer.ring);
