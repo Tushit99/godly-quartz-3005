@@ -830,9 +830,7 @@
       "id": 26
     }
   ],
-
   "cart": [],
-  "checkout": [],
   "users": [
     {
       "firstName": "Shekhar",
@@ -854,8 +852,8 @@
       "Email": "abc@gmail.com",
       "Password": "12345678",
       "id": 3
-=======
-  "cart": [], 
+    }
+  ],
   "checkout": [
     {
       "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE07603-1YP6P0_1_lar.jpg",
@@ -893,7 +891,6 @@
       "id": 26,
       "isChecked": false,
       "qty": 7
-
     }
   ]
 }
