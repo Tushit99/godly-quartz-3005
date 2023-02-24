@@ -7,34 +7,29 @@ import PageNotFound from '../Pages/PageNotFound'
 
 import Payment from '../Pages/Payment'
 import SignIn from '../Pages/SignIn/SignIn'
-import SignUp from '../Pages/SignIn/SignUp'
-import Earring from './Earring'
-import Newarival from './Newarival'
-import PrivateRoute from './PrivateRoute'
-import RingProduct from './RingProduct'
-
-import Payment from '../Pages/Payment' 
+import SignUp from '../Pages/SignIn/SignUp' 
 import Blank from './Blank'
 import Earring from './Earring/Earring'
 import Newarival from './Newarival/Newarival'
+import PrivateRoute from './PrivateRoute'
 import RingProduct from './Ring/RingProduct'
 
 
 const MainRout = () => {
-  return ( 
-    <Routes> 
+  return (
+    <Routes>
       <Route path='/' element={<Blank />} />
-        <Route path='/ring' element={<RingProduct /> } /> 
-        <Route path='/newarival' element={<Newarival />} /> 
-        <Route path='/earring' element={<Earring />} /> 
-        <Route path='/admin' element={<Admin />} />
-        <Route path='/cart' element={<PrivateRoute><Cart/></PrivateRoute>} />
-        <Route path='/payment' element={<PrivateRoute><Payment/></PrivateRoute>} />
-        <Route path='/admin/:name/:id' element={<Edit />} /> 
-        <Route path="*" element={<PageNotFound />}></Route> 
-        <Route path="/login" element={<SignIn/>} />
-        <Route path="/signup" element={<SignUp/>} />  
-    </Routes> 
+      <Route path='/ring' element={<RingProduct />} />
+      <Route path='/newarival' element={<Newarival />} />
+      <Route path='/earring' element={<Earring />} />
+      <Route path='/admin' element={<Admin />} />
+      <Route path='/cart' element={<PrivateRoute><Cart /></PrivateRoute>} />
+      <Route path='/payment' element={<PrivateRoute><Payment /></PrivateRoute>} />
+      <Route path='/admin/:name/:id' element={<Edit />} />
+      <Route path="*" element={<PageNotFound />}></Route>
+      <Route path="/login" element={<SignIn />} />
+      <Route path="/signup" element={<SignUp />} />
+    </Routes>
 
   )
 }
