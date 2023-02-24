@@ -9,7 +9,7 @@ export const getEaring = (params) => async (dispatch) => {
   dispatch({ type: EARRING_DATA_LOADING });
   try {
     let res = await axios
-      .get("http://localhost:8080/earrings", params)
+      .get("https://tame-lime-hose.cyclic.app/earrings", params)
       .then((e) => {
         dispatch({ type: EARRING_DATA_SUCCESS, payload: e.data });
         return e.data;

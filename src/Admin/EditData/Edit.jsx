@@ -31,7 +31,7 @@ const Edit = () => {
         type,
       };
       let res = await axios
-        .patch(`http://localhost:8080/${name}/${id}`, obj)
+        .patch(`https://tame-lime-hose.cyclic.app/${name}/${id}`, obj)
       console.log(res);
       setImage("");
       setName("");
@@ -49,7 +49,7 @@ const Edit = () => {
   }
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/${name}/${id}`).then((e) => {
+    axios.get(`https://tame-lime-hose.cyclic.app/${name}/${id}`).then((e) => {
       setImage(e.data.image);
       setName(e.data.name);
       setDiscription(e.data.discription);

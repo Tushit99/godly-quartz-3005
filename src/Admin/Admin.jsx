@@ -38,7 +38,7 @@ const Admin = () => {
             type: "earring",
         };
         let res = await axios
-            .post(`http://localhost:8080/${pushto}`, obj)
+            .post(`https://tame-lime-hose.cyclic.app/${pushto}`, obj)
         console.log(res);
         setImage("");
         setName("");
@@ -52,7 +52,7 @@ const Admin = () => {
     };
 
     const handleDelete = async (id, name) => { 
-            let x = await axios.delete(`http://localhost:8080/${name}/${id}`);
+            let x = await axios.delete(`https://tame-lime-hose.cyclic.app/${name}/${id}`);
             runAll();
             console.log(x); 
     }
