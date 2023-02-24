@@ -829,7 +829,7 @@
       "type": "earring",
       "id": 26
     }
-  ],
+  ], 
   "cart": [],
   "users": [
     {
@@ -850,10 +850,10 @@
       "firstName": "abc",
       "lastName": "def",
       "Email": "abc@gmail.com",
-      "Password": "12345678",
+      "Password": "12345678", 
       "id": 3
     }
-  ],
+  ], 
   "checkout": [
     {
       "image": "https://cdn.caratlane.com/media/catalog/product/J/E/JE07603-1YP6P0_1_lar.jpg",
