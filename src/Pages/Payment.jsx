@@ -43,7 +43,7 @@ import { deleteCheckoutData, getCheckoutData } from "../redux/Checkout/action";
     const TotalMRP = localStorage.getItem("Total MRP");
     const DiscountPrice = localStorage.getItem("DiscountPrice");
   
-    const captcha = 1309;
+    const captcha = 8794;
     const { cardno, cardName, month, cvv } = value;
   
     const activeStyle = {
