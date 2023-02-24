@@ -22,6 +22,29 @@
 .container>div:nth-child(2){
     /* border: 2px solid rgb(21, 255, 0);  */
     flex: 7;
-}
+} 
+
+@media screen and (min-width:100px) and (max-width:600px) {
+
+    .detail{
+        grid-template-columns: repeat(1,1fr);
+    }   
+    .container>div:nth-child(1){
+        /* border: 2px solid rgb(255, 0, 0);  */
+        flex: 0;
+    }
+} 
+
+@media screen and (min-width:600px) and (max-width:980px) {
+
+    .detail{
+        grid-template-columns: repeat(2,1fr);
+    }   
+    .container>div:nth-child(1){
+        /* border: 2px solid rgb(255, 0, 0);  */
+        flex: 0;
+    }
+} 
+
 
 

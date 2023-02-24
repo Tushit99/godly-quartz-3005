@@ -12,46 +12,67 @@ import {
 
 import React from "react";
 
-
-const CartComponent = ({ cart, handleCheckData, handleChangeQty, removeFromCart }) => {
-
-
-
+const CartComponent = ({
+  cart,
+  handleCheckData,
+  handleChangeQty,
+  removeFromCart,
+}) => {
   return (
-    <Box w={"100%"} backgroundColor="green">
-      <Box mb={5} border={'1px solid #B2B3C8'} borderRadius={5} w="100%" >
-        <Flex direction={{ base: 'column', sm: 'column', md: 'row', lg: 'row' }} >
-          <Stack w={"100%"} ml={2} display={{ base: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
-            spacing={3} margin={"auto"} mb={6} boxShadow={'md'} borderRadius={5} p={3} >          <Box
+    <Box w={"100%"}>
+      <Box mb={5} border={"1px solid #B2B3C8"} borderRadius={5} w="100%">
+        <Flex
+          direction={{ base: "column", sm: "column", md: "row", lg: "row" }}
+        >
+          <Stack
+            w={"100%"}
+            ml={2}
+            display={{ base: "flex", sm: "flex", md: "none", lg: "none" }}
+            spacing={3}
+            margin={"auto"}
+            mb={6}
+            boxShadow={"md"}
+            borderRadius={5}
+            p={3}
+          > 
+            <Box
               pl={"0.5rem"}
               textAlign={"left"}
               width={{ sm: "100%", md: "100%", lg: "100%" }}
             >
-              <HStack justifyContent={'space-between'} ><Text fontSize={{ md: "0.8rem" }} fontWeight={"700"}>
-                {cart.name}
-              </Text> <Box position={"relative"}>
-                  <CloseIcon position={"absolute"} top={0} right={3} onClick={() => removeFromCart(cart.id)} />
-                </Box></HStack>
+              <HStack justifyContent={"space-between"}>
+                <Text fontSize={{ md: "0.8rem" }} fontWeight={"700"}>
+                  {cart.name}
+                </Text>{" "}
+                <Box position={"relative"}>
+                  <CloseIcon
+                    position={"absolute"}
+                    top={0}
+                    right={3}
+                    onClick={() => removeFromCart(cart.id)}
+                  />
+                </Box>
+              </HStack>
 
-              <Text fontSize={{ md: "0.8rem" }} mb={2} >
-                <Text display={"inline-block"} color={"gray.400"} mr={2} >
+              <Text fontSize={{ md: "0.8rem" }} mb={2}>
+                <Text display={"inline-block"} color={"gray.400"} mr={2}>
                   Sold by:
                 </Text>
                 {cart.name}
               </Text>
-              <Box mb={2} >
+              <Box mb={2}>
                 <Flex alignItems={"center"} gap={"1rem"}>
                   <Text
                     fontSize={{ sm: "0.8rem", md: "1rem" }}
-                    fontWeight={700}
+                    fontWeight={400}
                   >
                     Qty:
                   </Text>
                   <Select
                     fontSize={"0.7rem"}
                     value={cart.qty}
-                    w={{ md: "25%", lg: "35%", sm: "25%" }}
-                    size={"xs"}
+                    size={"sm"}
+                    width="60px"
                     onChange={(e) => handleChangeQty(e.target.value, cart.id)}
                   >
                     {[1, 2, 3, 4].map((item, i) => (
@@ -69,7 +90,7 @@ const CartComponent = ({ cart, handleCheckData, handleChangeQty, removeFromCart 
                   justifyContent={"space-between"}
                   alignItems={"baseline"}
                   gap={"0.5rem"}
-                  mt={1}
+                  mt={1} 
                 >
                   <Text fontSize={"0.9rem"} fontWeight={"600"}>
                     Rs.{cart.price * cart.qty}
@@ -93,7 +114,7 @@ const CartComponent = ({ cart, handleCheckData, handleChangeQty, removeFromCart 
             position={"relative "}
             margin={"auto"}
           >
-            <Image src={cart.image} width={'100%'} ></Image>
+            <Image src={cart.image} width={"100%"}></Image>
             <Checkbox
               top={1}
               left={1}
@@ -103,25 +124,38 @@ const CartComponent = ({ cart, handleCheckData, handleChangeQty, removeFromCart 
               onChange={() => handleCheckData(cart.id, cart)}
             ></Checkbox>
           </Box>
-          <Stack w={"100%"} ml={2} spacing={3} display={{ base: 'none', sm: 'none', md: 'flex', lg: 'flex' }}  >
+          <Stack
+            w={"100%"}
+            ml={2}
+            spacing={3}
+            display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}
+          >
             <Box
               pl={"0.5rem"}
               textAlign={"left"}
               width={{ sm: "100%", md: "100%", lg: "100%" }}
             >
-              <HStack justifyContent={'space-between'} ><Text fontSize={{ md: "0.8rem" }} fontWeight={"700"}>
-                {cart.name}
-              </Text> <Box position={"relative"}>
-                  <CloseIcon position={"absolute"} top={0} right={3} onClick={() => removeFromCart(cart.id)} />
-                </Box></HStack>
+              <HStack justifyContent={"space-between"}>
+                <Text fontSize={{ md: "0.8rem" }} fontWeight={"700"}>
+                  {cart.name}
+                </Text>{" "}
+                <Box position={"relative"}>
+                  <CloseIcon
+                    position={"absolute"}
+                    top={0}
+                    right={3}
+                    onClick={() => removeFromCart(cart.id)}
+                  />
+                </Box>
+              </HStack>
 
-              <Text fontSize={{ md: "0.8rem" }} mb={1} >
+              <Text fontSize={{ md: "0.8rem" }} mb={1}>
                 <Text display={"inline-block"} color={"gray.400"}>
                   Sold by:
                 </Text>
                 {cart.name}
               </Text>
-              <Box >
+              <Box>
                 <Flex alignItems={"center"} gap={"1rem"}>
                   <Text
                     fontSize={{ sm: "0.8rem", md: "1rem" }}
@@ -170,10 +204,8 @@ const CartComponent = ({ cart, handleCheckData, handleChangeQty, removeFromCart 
               </Flex>
             </Box>
           </Stack>
-
         </Flex>
       </Box>
-
     </Box>
   );
 };
