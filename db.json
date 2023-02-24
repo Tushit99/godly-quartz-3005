@@ -828,9 +828,9 @@
       "rating": 5.1,
       "type": "earring",
       "id": 26
-    }
-  ], 
-  "cart": [],
+    } 
+  ],
+  "cart": [],  
   "users": [
     {
       "firstName": "Shekhar",
