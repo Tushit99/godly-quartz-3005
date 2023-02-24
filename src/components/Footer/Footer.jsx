@@ -91,7 +91,7 @@ export default function Footer() {
               GOLD RATE
             </Link>
             <Link
-              href={"#"}
+              href={"#"} 
               fontSize={"11px"}
               color="#87769D"
               lineHeight={"20px"}

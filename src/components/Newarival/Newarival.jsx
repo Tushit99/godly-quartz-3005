@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { useLocation, useSearchParams } from 'react-router-dom';
-import { getNewarival } from '../../redux/Newarival/action';
+import { useLocation, useSearchParams } from 'react-router-dom'; 
+import style from "./NewArival.module.css" 
 import Productbox from '../Productbox';
 import Sorting from '../Sorting';
-import style from "./Newarival.module.css"
+import { getNewarival } from '../../redux/Newarival/action';
 
-const Newarival = () => {
+const NewArival = () => {
     const store = useSelector((state) => state.arivalReducer.newArival);
     const dispatch = useDispatch();
     const location = useLocation();
@@ -22,15 +22,15 @@ const Newarival = () => {
 
     useEffect(() => {
         dispatch(getNewarival(obj));
-    }, [location.search]);
+    }, [location.search]); 
 
-    return (
+    return ( 
         <div>
             <img width={"100%"} src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/02-FEB/AppBanner/Newin/01/Desktop_1920-x560_toplisting.jpg" alt="" />
             <div className={style.container}>
                 <div className={style.sort}>
                     <Sorting />
-                </div>
+                </div> 
                 <div className={style.detail}>
                     {store.map((e) => (
                         <Productbox key={e.id} {...e} />
@@ -41,4 +41,5 @@ const Newarival = () => {
     )
 }
 
-export default Newarival
+
+export default NewArival  

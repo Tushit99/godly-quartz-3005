@@ -147,7 +147,18 @@
   padding: 6px;
   color: #000000;
   border-radius: 3px;
+} 
+
+.box form select{
+  margin: 8px auto;
+  width: 100%;
+  background-color: unset;
+  border: 1.5px solid #11efff;
+  padding: 6px;
+  color: #000000;
+  border-radius: 3px; 
 }
+
 
 .btn {
   border: none;
