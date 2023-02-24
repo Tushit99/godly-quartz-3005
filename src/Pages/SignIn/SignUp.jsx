@@ -41,7 +41,7 @@ import {
       
       if(ResData.firstName!=="" && ResData.Email!=="" && ResData.Password!==""){
         
-        await fetch(`http://localhost:8080/users`, {
+        await fetch(`https://tame-lime-hose.cyclic.app/users`, {
           method: "POST",
           body: JSON.stringify(ResData),
           headers: {

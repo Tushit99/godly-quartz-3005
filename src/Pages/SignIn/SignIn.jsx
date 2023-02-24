@@ -41,7 +41,7 @@ import { AuthContext } from "../../context/AuthContext"
 
     useEffect(()=>{
       axios
-        .get("http://localhost:8080/users")
+        .get("https://tame-lime-hose.cyclic.app/users")
             .then(data => {
                 setLoginData(data.data)
             })
