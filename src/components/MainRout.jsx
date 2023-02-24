@@ -10,8 +10,8 @@ import SignUp from '../Pages/SignIn/SignUp'
 import Blank from './Blank'
 import RingProduct from './Ring/RingProduct'
 import PrivateRoute from './PrivateRoute'
-import Earring from './Earring/Earring'
-import NewArival from './NewArival/NewArival'  
+import Earring from './Earring/Earring' 
+import NewArival from './NewArival/NewArival'
 
 
 const MainRout = () => {
@@ -19,7 +19,7 @@ const MainRout = () => {
     <Routes>
       <Route path='/' element={<Blank />} />
       <Route path='/ring' element={<RingProduct />} /> 
-      <Route path='/newarival' element={<Newarival />} />
+      <Route path='/newarival' element={<NewArival />} />
       <Route path='/earring' element={<Earring />} />
       <Route path='/admin' element={<Admin />} />
       <Route path='/cart' element={<PrivateRoute><Cart /></PrivateRoute>} />

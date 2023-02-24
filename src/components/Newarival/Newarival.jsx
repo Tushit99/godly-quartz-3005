@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useSearchParams } from 'react-router-dom'; 
-import style from "./NewArival.module.css" 
+import style from "./Newarival.module.css" 
 import Productbox from '../Productbox';
 import Sorting from '../Sorting';
 import { getNewarival } from '../../redux/Newarival/action';
