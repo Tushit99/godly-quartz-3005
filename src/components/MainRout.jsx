@@ -11,7 +11,7 @@ import Blank from './Blank'
 import RingProduct from './Ring/RingProduct'
 import PrivateRoute from './PrivateRoute'
 import Earring from './Earring/Earring' 
-import NewArival from './NewArival/NewArival'
+import NewArival from './Newarival/Newarival'
 
 
 const MainRout = () => {
