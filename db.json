@@ -830,6 +830,31 @@
       "id": 26
     }
   ],
+
+  "cart": [],
+  "checkout": [],
+  "users": [
+    {
+      "firstName": "Shekhar",
+      "lastName": "Kumar",
+      "Email": "shekhar.rrj@gmail.com",
+      "Password": "12345678",
+      "id": 1
+    },
+    {
+      "firstName": "Shekhar",
+      "lastName": "Kumar",
+      "Email": "shekhar.rrj@gmail.com",
+      "Password": "45888474",
+      "id": 2
+    },
+    {
+      "firstName": "abc",
+      "lastName": "def",
+      "Email": "abc@gmail.com",
+      "Password": "12345678",
+      "id": 3
+=======
   "cart": [], 
   "checkout": [
     {
@@ -868,6 +893,7 @@
       "id": 26,
       "isChecked": false,
       "qty": 7
+
     }
   ]
 }
