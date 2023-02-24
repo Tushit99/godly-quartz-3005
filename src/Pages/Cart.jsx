@@ -208,7 +208,7 @@ const Cart = () => {
             })}
           </Box>
           <Button _hover={{backgroundColor:"white",color:"pink.400",outline:"2px solid #e10765"}} w={"100%"} mt={"2rem"} color={"white"} backgroundColor={"pink.400"} onClick={()=>{
-            goToAddress("/address");
+            goToAddress("/payment");
             localStorage.setItem('Total MRP',resultcount);
             localStorage.setItem('DiscountPrice',resultStriked);
           }}>PLACE ORDER</Button>
