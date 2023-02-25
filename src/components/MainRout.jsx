@@ -12,6 +12,7 @@ import RingProduct from './Ring/RingProduct'
 import PrivateRoute from './PrivateRoute'
 import Earring from './Earring/Earring' 
 import NewArival from './Newarival/Newarival'
+import Single from './SingleProduct/Single'
 
 
 const MainRout = () => {
@@ -27,7 +28,13 @@ const MainRout = () => {
       <Route path='/admin/:name/:id' element={<Edit />} />
       <Route path="*" element={<PageNotFound />}></Route>
       <Route path="/login" element={<SignIn />} />
-      <Route path="/signup" element={<SignUp />} />
+      <Route path="/signup" element={<SignUp />} /> 
+
+
+      <Route path='/ring/:name/:id' element={<Single />} /> 
+      <Route path='/newarival/:name/:id' element={<Single />} />
+      <Route path='/earring/:name/:id' element={<Single />} />
+
     </Routes> 
   )
 }
