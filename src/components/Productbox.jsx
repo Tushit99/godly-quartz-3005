@@ -2,9 +2,10 @@ import { Button, } from '@chakra-ui/react';
 import style from "./Productbox.module.css";
 import { FaChevronRight } from 'react-icons/fa';
 import { useState } from 'react';
-import BeatLoader from "react-spinners/BeatLoader"; 
+import BeatLoader from "react-spinners/BeatLoader";
+import { Link } from 'react-router-dom';
 
-const Productbox = ({ image, name, price, strikePrice }) => {
+const Productbox = ({id, image, name, price, strikePrice, area }) => {
     const [btloading, setBtloading] = useState(false);
     const [btText, setBtText] = useState("Check delivery date");
 
@@ -24,33 +25,35 @@ const Productbox = ({ image, name, price, strikePrice }) => {
     }
 
     return (
-        <div className={style.box}>
-            <div className={style.imgbox}>
-                <img className={style.proimg} src={image} alt="product-img" />
-            </div>
-            <div className={style.pricebox}>
-                <h2>₹{price}</h2>
-                <p>₹{strikePrice}</p>
-            </div>
-            <div>
-                <Button
-                    isLoading={btloading}
-                    colorScheme='white'
-                    padding={0}
-                    height={5}
-                    cursor="pointer"
-                    margin={0}
-                    fontSize="large"
-                    color={"black"}
-                    onClick={deleveryDate}
-                    spinner={<BeatLoader size={8} color='blue' />}
-                >
-                    {btText}{btText === "Check delivery date" ? <FaChevronRight /> : ""}
-                </Button>
-            </div>
+        <Link to={`./${area}/${id}`}>
+            <div className={style.box}>
+                <div className={style.imgbox}>
+                    <img className={style.proimg} src={image} alt="product-img" />
+                </div>
+                <div className={style.pricebox}>
+                    <h2>₹{price}</h2>
+                    <p>₹{strikePrice}</p>
+                </div>
+                <div>
+                    <Button
+                        isLoading={btloading}
+                        colorScheme='white'
+                        padding={0}
+                        height={5}
+                        cursor="pointer"
+                        margin={0}
+                        fontSize="large"
+                        color={"black"}
+                        onClick={deleveryDate}
+                        spinner={<BeatLoader size={8} color='blue' />}
+                    >
+                        {btText}{btText === "Check delivery date" ? <FaChevronRight /> : ""}
+                    </Button>
+                </div>
 
-            <h3> {name} </h3>
-        </div>
+                <h3> {name} </h3>
+            </div>
+        </Link>
     )
 }
 

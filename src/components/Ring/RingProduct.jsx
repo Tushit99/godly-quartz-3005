@@ -48,7 +48,7 @@ const RingProduct = () => {
                         </div> :
                         <div className={style.detail}>
                             {store.map((e) => (
-                                <Productbox key={e.id} {...e} />
+                                <Productbox key={e.id} area={"rings"} {...e} />
                             ))}
                         </div>
                     }

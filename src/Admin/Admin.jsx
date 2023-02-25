@@ -7,6 +7,7 @@ import { getRing } from '../redux/Ring/action';
 import AdminDetail from './AdminDetail';
 import style from "./Admin.module.css"
 import axios from 'axios';
+import Oredr from './Order/Oredr';
 
 const Admin = () => {
     const data1 = useSelector((state) => state.earReducer.earring);
@@ -136,7 +137,8 @@ const Admin = () => {
                     <TabList mb='1em'>
                         <Tab>Earing </Tab>
                         <Tab> NewArival </Tab>
-                        <Tab> Ring </Tab>
+                        <Tab> Ring </Tab> 
+                        <Tab> Orders </Tab>
                     </TabList>
                     <TabPanels>
                         <TabPanel>
@@ -147,6 +149,9 @@ const Admin = () => {
                         </TabPanel>
                         <TabPanel>
                             <AdminDetail detail={data3} pageon={"rings"} handleDelete={handleDelete} />
+                        </TabPanel>
+                        <TabPanel> 
+                            <Oredr />
                         </TabPanel>
                     </TabPanels>
                 </Tabs>

@@ -49,9 +49,9 @@ const Earring = () => {
                         </div> :
                         <div className={style.detail}>
                             {store.map((e) => (
-                                <Productbox key={e.id} {...e} />
+                                <Productbox key={e.id} area={"earrings"} {...e} />
                             ))}
-                        </div>
+                        </div> 
                     }
                 </div>
             </div>
