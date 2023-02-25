@@ -281,6 +281,225 @@ const Navbar = () => {
           </HStack>
         </Flex>
 
+        <Box className='dropDown-Menu' display={{ base: 'none', md: 'flex' }}  justifyContent={"space-between"} boxShadow='base' p='2' rounded='sm' bg='white' w={"100%"} >
+                    <Box> 
+                   <Link to="/jawellary" > <Button as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500"}}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >NEW ARRIVALS</Button></Link>
+                    </Box>
+                    
+
+                    <Box>
+                    <Box>
+                    <Menu >
+                    <MenuButton as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500"}}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >RINGS</MenuButton>
+                    <MenuList >
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem' bg={"white"} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlo5JpfJGnijXQVGGpuKQmt-FR2EtIwR3Ieg&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"} >ENGAGEMENT</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6YvtEKwJTemsoQuEtSwZDOh3Tc9xarqOMvg&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"} >FASHION</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrlSVn_pd8Dqpk2LwAuxOpjidyvUfCNhkrrA&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>CASUAL</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs7TC4imxTCat6GS60K2pd8T62amzwMQ9UmQ&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>ADJUSTALE RINGS</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbT7ncK1IuYCcHLvHILOp39c33Tt6zHiL6-lzFRqQdIeSphae8ovFXxInKcDBF3V3owQ&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>SILVER STATEMENT RINGS</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlo5JpfJGnijXQVGGpuKQmt-FR2EtIwR3Ieg&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>ENGAGEMENT</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlo5JpfJGnijXQVGGpuKQmt-FR2EtIwR3Ieg&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>ENGAGEMENT</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlo5JpfJGnijXQVGGpuKQmt-FR2EtIwR3Ieg&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>ENGAGEMENT</Text>
+                    </MenuItem>
+                    </MenuList>
+                    </Menu>
+                    </Box>
+                    </Box>
+
+
+                    <Box  >
+                    <Box>
+                    <Menu>
+                    <MenuButton as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500" }}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >EARRINGS</MenuButton>
+                    <MenuList>
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZLcHECusSzP4_OvWJTWSpwSLyadwkHm1aNg&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>STUD</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQkwgitaP4cC5VbfTnLKrTvwxEglwYx5UQQg&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>JHUMKAS</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8xPYoH3VP5eIkWbMCQeSctyeSpYNoi1cRVV_uvVe5VzCfiYKAvlfHsBYwGkKGW3YfCyM&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>HOOPS & HUGGIES</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX1a2nsUq9dOh2zjnqtd5jb9YYHOQk0QcVxg&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>EARCUFFS</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwgXO_f9EuJPD5JqJAPugReq_cA4_k9n7p6g&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>DROPS</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTg9HaBNh0jceI1lXw9n46__op9cEkiLqtnI51e8171JU3Sa1-6AIp5nNPwwKAfWLBT6Y&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>PEARL EARINGS</Text>
+                    </MenuItem>
+                    </MenuList>
+                    </Menu>
+                    </Box>
+                    </Box>
+
+
+                    <Box  >
+                    <Box>
+                    <Menu>
+                    <MenuButton as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500" }}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >BRACELETS & BANGLES</MenuButton>
+                    <MenuList>
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscLrm08Pxja3t7mdlDCatHno0VWqq8pb7dw&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>CHAIN BRACELETE</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIZQLdqugRp7ZSYjEglcoshHsO8zy0tgjrmw&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>FLEXIBLE BRACELETE</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscLrm08Pxja3t7mdlDCatHno0VWqq8pb7dw&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>MANGLESUTRA BRACELETE</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZy_SMZB466H6V1MHXWK-_kQorEQa6y4EFQ&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>LIGHTWEIGHT BANGLES</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQn86Ox0O3G0s2Rpn8vZaow9F8CiP6itO5zQ&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>DIAMOND BANGLES </Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOHFSbPeQWy8Cq1aauzWZAspLfiTi-tADbzchJifjbp1Yw5Vfxaqn4r_JJ6sJK57BcrGQ&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>GOLD BANGLES</Text>
+                    </MenuItem>
+                    </MenuList>
+                    </Menu>
+                    </Box>
+                    </Box>     
+
+                    <Box display={"grid"} >
+                    <Box>
+                    <Menu>
+                    <MenuButton as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500" }}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >SOLITAIRS</MenuButton>
+                    <MenuList>
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4xHj_srtOVVMULS7jlxFs8hiwCjxTeOQy7g&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>RINGS</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2rCmHYb2AAKrHUHCeT-Ypn478k4TFRzR0w&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>PENDANTS</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4a56271J_XdV8sPo6oNnBSJROsNtnK7fRuQ&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>NECKLACE</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDWGGN_CMXIn41McZoNRhhodezsn7W41vi65wmJu0clfCO9e-fa_ehYsfYMnlYv1bTLjE&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>MENS SOLITAIRES</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2qq3tUerLED-tGlGjLv8TsINVmngpZqeVVA&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>EARRINGS</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-niLrGltG7l5HrRqfqyIC8hZZpjuVXisMcg&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>BRIDAL SETS</Text>
+                    </MenuItem>
+
+                    <MenuItem minH='48px'>
+                    <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwaQjQtIWpJ6bm8UGTPoY5TRCWLxp6ZK04CA&usqp=CAU"   alt='Rings' mr='12px'/>
+                    <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>MANGALSUTRA</Text>
+                    </MenuItem>
+                    </MenuList>
+                    </Menu>
+                    </Box>
+                    </Box>
+
+                    <Box className='mangalsutra-sec'>
+                    <Button as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500" }}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >MANGALSUTRA</Button>
+                    </Box>
+
+                    <Box className='ready-to-ship' >
+                    <Button as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500" }}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >READY TO SHIP</Button>
+                    </Box>
+
+                    <Box className='kids'>
+                    <Button as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500" }}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >KIDS</Button>
+                    </Box>
+
+                    <Box display={"grid"} >
+                    <Box>
+                    <Menu>
+                    <MenuButton as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500" }}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"}  fontWeight={"thin"}>OTHER JEWELLERY</MenuButton>
+                    <MenuList>
+                    </MenuList>
+                    </Menu>
+                    </Box>
+                    </Box>
+
+                    <Box >
+                    <Box>
+                    <Menu>
+                    <MenuButton as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500" }}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >GIFTING</MenuButton>
+                    <MenuList>
+                        <Box  display={"flex"} gap={"10px"}>
+                        <Image  w={"5%"} src="https://images.pexels.com/photos/1454184/pexels-photo-1454184.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
+                        <Image  w={"5%"} src="https://images.pexels.com/photos/2799862/pexels-photo-2799862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+                        <Image  w={"5%"} src="https://images.pexels.com/photos/6779877/pexels-photo-6779877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+                        <Image  w={"5%"} src="https://images.pexels.com/photos/5876688/pexels-photo-5876688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+                        </Box>
+                    </MenuList>
+                    </Menu>
+                    </Box>
+                    </Box>
+
+                </Box>
+
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }} bg={"white"}>
             <Stack as={"nav"} spacing={4} h={"1000%"}>
