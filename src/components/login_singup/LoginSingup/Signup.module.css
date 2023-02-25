@@ -1,0 +1,70 @@
+
+
+
+.main{
+    margin: auto;
+    margin-top: 7.5rem;
+    width: 28%;
+    /* border: 1px solid ; */
+    padding-top: 1rem;
+    height: auto;
+    background-color: #f9f9fa;
+}
+
+.imagediv{
+ display: flex;
+ margin-top: 2rem;
+
+}
+
+.img{
+  margin: auto;
+  display: flex;  
+ border: 1px solid rgb(173, 169, 173);
+ width: 38%;
+ height: 3rem;
+ background-color:white ;
+ cursor: pointer;
+}
+.image{
+    width: 2rem;
+    margin: auto;
+    margin-left: 0.5rem;
+  
+}
+.registerbutton{
+    background: linear-gradient(to right, rgb(222, 87, 229) 0%, rgb(136, 99, 251) 100%) 0px 0px / auto;
+    width:100%;
+    height:3rem;
+    border-radius:1rem ;
+    color:white ;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+
+@media screen and (max-width:990px){
+    .main{
+        margin: auto;
+        margin-top: 5.5rem;
+        width: 50%;
+        /* border: 1px solid ; */
+        padding-top: 1rem;
+        height: auto;
+        background-color: #f9f9fa;
+    }
+ 
+}
+
+@media screen and (max-width:560px){
+    .main{
+        margin: auto;
+        margin-top: 5.5rem;
+        width: 95%;
+        /* border: 1px solid ; */
+        padding-top: 1rem;
+        height: auto;
+        background-color: #f9f9fa;
+    }
+}
