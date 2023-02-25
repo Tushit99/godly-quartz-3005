@@ -1,6 +1,7 @@
 import { CloseIcon } from "@chakra-ui/icons";
 import {
   Box,
+  Button,
   Checkbox,
   Flex,
   HStack,
@@ -45,12 +46,12 @@ const CartComponent = ({
                   {cart.name}
                 </Text>{" "}
                 <Box position={"relative"}>
-                  <CloseIcon
+                  <Button
                     position={"absolute"}
                     top={0}
                     right={3}
                     onClick={() => removeFromCart(cart.id)}
-                  />
+                  >Remove</Button>
                 </Box>
               </HStack>
 
@@ -140,12 +141,12 @@ const CartComponent = ({
                   {cart.name}
                 </Text>{" "}
                 <Box position={"relative"}>
-                  <CloseIcon
+                  <Button
                     position={"absolute"}
                     top={0}
                     right={3}
                     onClick={() => removeFromCart(cart.id)}
-                  />
+                  >Remove</Button>
                 </Box>
               </HStack>
 
