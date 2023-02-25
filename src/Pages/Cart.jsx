@@ -57,6 +57,7 @@ const Cart = () => {
   const removeFromCart = async (id) => {
     await deleteCartAPI(id)
     fetchCartAPI()
+    window.location.reload();
 
   }
 
