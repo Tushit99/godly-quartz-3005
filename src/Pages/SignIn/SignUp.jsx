@@ -12,10 +12,10 @@ import {
     Heading,
     Text,
     useColorModeValue,
-    // Link,
+    Link
   } from '@chakra-ui/react';
   import { useState } from 'react';
-  import { useNavigate } from 'react-router-dom';
+  import { NavLink, useNavigate } from 'react-router-dom';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
   
   const SignUp=()=> {
@@ -112,14 +112,21 @@ import {
                 </InputGroup>
               </FormControl>
               <Stack spacing={10} pt={2}>
+              <Stack  p={2}
+                align={'center'}>
+                  <Text align={'center'}>
+                    Already have an account?
+                    <NavLink to="/login"><Link color={'blue.400'}>SignIn</Link></NavLink>
+                  </Text>
+                </Stack>
                 <Button
                 onClick={sendUserData}
                   loadingText="Submitting"
                   size="lg"
-                  bg={'blue.400'}
+                  bgGradient="linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))"
                   color={'white'}
                   _hover={{
-                    bg: 'blue.500',
+                    bgGradient:"linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))"
                   }}>
                   Sign up
                 </Button>
