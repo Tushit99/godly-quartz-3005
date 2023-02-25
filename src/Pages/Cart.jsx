@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import CartComponent from "../components/Cart/CartComponent";
 import LoadingPage from "./LoadingPage";
 import { deleteCartAPI } from "../redux/cart/cart.api";
-import { postCheckoutData } from "../redux/Checkout/action";  
+import { postCheckoutData } from "../redux/Checkout/action";
 
 const Cart = () => {
   const { loading, error } = useSelector((store) => store.cartReducer);
@@ -115,7 +115,7 @@ const Cart = () => {
   });
 
   return (
-    <div>  
+    <div>
       <Box>
         {/* <PaymentNavbar/> */}
       </Box>
@@ -136,7 +136,7 @@ const Cart = () => {
         >
           <Box width={{ base: "100%", sm: "100%", md: "60%", lg: "55%" }} margin={"auto"} mt={0} >
             <Box border={"0px solid #9e998f"}>
-              <Flex 
+              <Flex
                 alignItems={"flex-start"}
                 justifyContent={"space-between"}
                 gap={2}
@@ -206,8 +206,8 @@ const Cart = () => {
                 );
               })}
             </Box>
-            <Button _hover={{ backgroundColor: "white", color: "pink.400", outline: "2px solid #e10765" }} w={"100%"} mt={"2rem"} color={"white"} backgroundColor={"pink.400"} onClick={() => {
-              goToAddress("/payment");
+            <Button _hover={{ bgGradient:"linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))", color: "white", outline: "2px solid #e10765" }} w={"100%"} mt={"2rem"} color={"white"} bgGradient="linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))" onClick={() => {
+              goToAddress("/address");
               localStorage.setItem('Total MRP', resultcount);
               localStorage.setItem('DiscountPrice', resultStriked);
             }}>PLACE ORDER</Button>

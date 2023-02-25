@@ -68,6 +68,7 @@ import { AuthContext } from "../../context/AuthContext"
             authState.isAuth=true;
             localStorage.setItem("userName",JSON.stringify(setLocal));
             navigate("/");
+            window.location.reload();
           }
 
           }else{
@@ -142,11 +143,11 @@ import { AuthContext } from "../../context/AuthContext"
                 </Stack>
               </Stack>
               <Button
-                bg={'blue.400'}
+                bgGradient="linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))"
                 color={'white'}
                 onClick={checkLoginData}
                 _hover={{
-                  bg: 'blue.500',
+                  bgGradient:"linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))"
                 }}>
                 Sign in
               </Button>

@@ -45,6 +45,16 @@ import img from "../img/logo.png"
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  let Name=JSON.parse(localStorage.getItem("userName"));
+
+
+  const logoutUser=()=>{
+    alert("Logged Out")
+    localStorage.removeItem("userName");
+    window.location.href="/login";
+  }
+
+
   return (
     <div>
       <Box
@@ -80,6 +90,7 @@ const Navbar = () => {
               justifyContent="space-around"
               alignItems={"center"}
             >
+              <Link to="/">
               <Box >
                 <Image
                   w={{ base: "80px", md: "150px" }} 
@@ -87,6 +98,7 @@ const Navbar = () => {
                   alt="log"
                 />
               </Box>
+              </Link>
 
               <Box display={{ sm: "none", md: "flex" }} alignItems={"center"}>
                 <IconButton
@@ -179,7 +191,7 @@ const Navbar = () => {
                     />
                     <InputRightElement width={{ md: "2rem" }}>
                       <IconButton
-                        bgGradient="linear(to-l, #7918CA, #FF0888)"
+                        bgGradient="linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))"
                         aria-label="Search database"
                         color={"white"}
                         icon={<SearchIcon />}
@@ -243,23 +255,25 @@ const Navbar = () => {
                     >
                       Access acount & manage your orders
                     </PopoverBody>
-                    <PopoverBody
+                    {Name? <Button bgGradient="linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))" _hover={{bgGradient:"linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))"}} onClick={logoutUser}>Logout</Button>:<PopoverBody
                       border="0"
                       display="flex"
                       alignItems="center"
                       justifyContent="space-around"
                       pb={4}
                     >
-                      <Link>
-                        {" "}
-                        <Button bg="#DE57E5">Signup</Button>
-                      </Link>
-                      <Link>
-                        <Button borderColor="#DE57E5" variant="outline">
-                          Login
-                        </Button>
-                      </Link>
-                    </PopoverBody>
+                      <Link to="/signup">
+                      {" "}
+                      <Button bg="#DE57E5">Signup</Button>
+                    </Link>
+                    <Link to="/login">
+                      <Button borderColor="#DE57E5" variant="outline">
+                        Login
+                      </Button>
+                    </Link>
+                      
+                    </PopoverBody>}
+                    
                   </PopoverContent>
                 </Portal>
               </Popover>
@@ -269,7 +283,7 @@ const Navbar = () => {
                 icon={<AiFillHeart />}
                 _hover={{ color: "#231535" }}
               />
-              <Link>
+              <Link to="/cart">
                 <IconButton
                   fontSize={{ base: "5px", sm: "13px", md: "15px" }}
                   bg={"#F6F4ff"}
@@ -283,7 +297,7 @@ const Navbar = () => {
 
         <Box className='dropDown-Menu' display={{ base: 'none', md: 'flex' }}  justifyContent={"space-between"} boxShadow='base' p='2' rounded='sm' bg='white' w={"100%"} >
                     <Box> 
-                   <Link to="/jawellary" > <Button as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500"}}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >NEW ARRIVALS</Button></Link>
+                   <Link to="/newarival" > <Button as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500"}}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >NEW ARRIVALS</Button></Link>
                     </Box>
                     
 
@@ -292,45 +306,54 @@ const Navbar = () => {
                     <Menu >
                     <MenuButton as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500"}}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >RINGS</MenuButton>
                     <MenuList >
+                    <Link to="/ring" > 
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem' bg={"white"} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlo5JpfJGnijXQVGGpuKQmt-FR2EtIwR3Ieg&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"} >ENGAGEMENT</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/ring" > 
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6YvtEKwJTemsoQuEtSwZDOh3Tc9xarqOMvg&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"} >FASHION</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/ring" > 
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrlSVn_pd8Dqpk2LwAuxOpjidyvUfCNhkrrA&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>CASUAL</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/ring" > 
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs7TC4imxTCat6GS60K2pd8T62amzwMQ9UmQ&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>ADJUSTALE RINGS</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/ring" > 
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbT7ncK1IuYCcHLvHILOp39c33Tt6zHiL6-lzFRqQdIeSphae8ovFXxInKcDBF3V3owQ&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>SILVER STATEMENT RINGS</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/ring" > 
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlo5JpfJGnijXQVGGpuKQmt-FR2EtIwR3Ieg&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>ENGAGEMENT</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/ring" > 
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlo5JpfJGnijXQVGGpuKQmt-FR2EtIwR3Ieg&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>ENGAGEMENT</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/ring" > 
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlo5JpfJGnijXQVGGpuKQmt-FR2EtIwR3Ieg&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>ENGAGEMENT</Text>
                     </MenuItem>
+                    </Link>
                     </MenuList>
                     </Menu>
                     </Box>
@@ -342,35 +365,42 @@ const Navbar = () => {
                     <Menu>
                     <MenuButton as={Button} bg={"white"} _hover={{bg:"#F6F4ff",fontWeight:"500" }}  fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"42px"} fontWeight={"thin"} >EARRINGS</MenuButton>
                     <MenuList>
+                    <Link to="/earring" >
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZLcHECusSzP4_OvWJTWSpwSLyadwkHm1aNg&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>STUD</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/earring" >
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQkwgitaP4cC5VbfTnLKrTvwxEglwYx5UQQg&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>JHUMKAS</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/earring" >
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8xPYoH3VP5eIkWbMCQeSctyeSpYNoi1cRVV_uvVe5VzCfiYKAvlfHsBYwGkKGW3YfCyM&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>HOOPS & HUGGIES</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/earring" >
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX1a2nsUq9dOh2zjnqtd5jb9YYHOQk0QcVxg&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>EARCUFFS</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/earring" >
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwgXO_f9EuJPD5JqJAPugReq_cA4_k9n7p6g&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>DROPS</Text>
                     </MenuItem>
-
+                    </Link>
+                    <Link to="/earring" >
                     <MenuItem minH='48px'>
                     <Image boxSize='4rem'  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTg9HaBNh0jceI1lXw9n46__op9cEkiLqtnI51e8171JU3Sa1-6AIp5nNPwwKAfWLBT6Y&usqp=CAU"   alt='Rings' mr='12px'/>
                     <Text as={"span"} fontFamily={"sans-serif"} fontSize={"11px"} lineHeight={"18px"}>PEARL EARINGS</Text>
                     </MenuItem>
+                    </Link>
                     </MenuList>
                     </Menu>
                     </Box>
