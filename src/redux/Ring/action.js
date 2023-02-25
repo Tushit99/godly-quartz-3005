@@ -7,9 +7,10 @@ export const getRing = (param)=> async (dispatch) =>{
     try{
         dispatch({type: RING_DATA_LOADING})
         let res = await axios.get("https://tame-lime-hose.cyclic.app/rings",param).then((e)=>{ 
-            dispatch({type: RING_DATA_SUCCESS, payload: e.data}) 
+            dispatch({type: RING_DATA_SUCCESS, payload: e.data}) ; 
             return e.data; 
         }) 
+        console.log(res); 
     }
     catch(err){
         dispatch({type: RING_DATA_ERROR}) 
