@@ -45,4 +45,8 @@ Our mission is to make beautiful jewellery accessible. Jewellery that not only m
 # SignIn Page
 <img width="725" alt="image" src="https://user-images.githubusercontent.com/97578587/221416317-ef29afa8-6f73-4a9c-901c-c3aae33db84b.png">
 
+## Tablet View  
+<img width="411" alt="image" src="https://user-images.githubusercontent.com/97578587/221416465-0eef639f-fc85-4609-9a6d-4cc0513b7f94.png">
 
+## Mobile View 
+<img width="200" alt="image" src="https://user-images.githubusercontent.com/97578587/221416554-21cc7aa3-0241-4e7e-ac98-2ba0a746d3e8.png">
