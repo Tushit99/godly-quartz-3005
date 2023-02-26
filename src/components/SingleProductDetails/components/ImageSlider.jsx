@@ -1,7 +1,6 @@
 import { Image } from '@chakra-ui/react';
 import React, { useState } from 'react'
-import ReactCardSlider from "react-card-slider-component";
-import { Card } from './Card';
+import ReactCardSlider from "react-card-slider-component"; 
 
 
 export const ImageSlider = () => {

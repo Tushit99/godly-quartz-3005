@@ -109,8 +109,8 @@ export const SingleProduct = () => {
      
     </div>
     <AllDetails />
-    <div><img src={image2}/></div>
-    <div style={{border:"1px solid green"}}><img src={image1} alt="imagedata"/></div>
+    <div><img src={image2} alt="img" /></div>
+    <div><img src={image1} alt="imagedata"/></div>
     </div>
   )
 }

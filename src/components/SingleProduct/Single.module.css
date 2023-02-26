@@ -3,37 +3,37 @@
     margin: auto;
     padding: 2px;
     display: flex;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(255, 255, 255);
     gap: 2px; 
   }
   
   .box1 { 
     flex: 3;
-    background-color: white;
+    background-color: white; 
   }
   
   .box2 {
-    flex: 6;
-    background-color:#f5f5f5;
+    flex: 6; 
+    background-color:#ffffff;
   }
   
   .heading {
     display: -webkit-box;
     -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical; 
     overflow: hidden;
-    text-align: left;
+    text-align: center;
     margin: 10px;
   }
   
   .infobox {
-    display: flex;
+    display: flex;  
   }
   
   .info1 {
     flex: 7;
     border: 1px solid rgb(245, 247, 247);
-    border-bottom: 0;
+    border-bottom: 0; 
     padding: 10px;
     text-align: left;
     border-left: 0;
@@ -124,6 +124,21 @@
     display: flex; 
     align-items: center ;  
     gap: 10px; 
+  } 
+
+
+  @media screen and (min-width:580px) and (max-width:980px) {
+    .main{
+      display: flex; 
+      align-items: center; 
+    }
+    .main img{
+      aspect-ratio: 4/5;
+    }
+
+    .infobox{
+      display: grid; 
+    }    
   }
    
   
@@ -132,7 +147,7 @@
       display: grid; 
       width: 90%; 
       margin: auto; 
-    }
+    } 
     .heading{
       font-size: small; 
     }
