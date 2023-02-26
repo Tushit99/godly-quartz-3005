@@ -42,7 +42,7 @@ Our mission is to make beautiful jewellery accessible. Jewellery that not only m
 ## Cart Page 
 <img width="706" alt="image" src="https://user-images.githubusercontent.com/97578587/221414165-884d5b60-3973-477b-b260-3c75867e4ec6.png">
 
-## Login 
+## SignIn 
 <img width="725" alt="image" src="https://user-images.githubusercontent.com/97578587/221416317-ef29afa8-6f73-4a9c-901c-c3aae33db84b.png">
 
 
