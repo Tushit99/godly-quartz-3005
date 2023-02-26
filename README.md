@@ -27,7 +27,8 @@ Today CaratLane is India's largest omni-channel jeweller. CaratLane also has ove
 ## Our Mission
 Our mission is to make beautiful jewellery accessible. Jewellery that not only makes a woman look beautiful but also make her feel beautiful and loved.
 
-#Home 
+# Home Page 
+
 <img width="711" alt="image" src="https://user-images.githubusercontent.com/97578587/221412223-64985d9f-70d4-4603-8e42-30b49c838008.png">
 
 
