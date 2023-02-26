@@ -38,6 +38,9 @@ Our mission is to make beautiful jewellery accessible. Jewellery that not only m
 ## Product Page 
 <img width="740" alt="image" src="https://user-images.githubusercontent.com/97578587/221414009-28f9c24c-4d09-43af-8a4e-443aebdfba39.png"> 
 
+## Product Detail Page 
+<img width="729" alt="image" src="https://user-images.githubusercontent.com/97578587/221414075-f2f08b25-d36e-449d-adc5-d607581039c5.png">
+ 
 
 
 
