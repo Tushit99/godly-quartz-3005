@@ -11,16 +11,15 @@ import CartComponent from "../components/Cart/CartComponent";
 import LoadingPage from "./LoadingPage";
 import { deleteCartAPI } from "../redux/cart/cart.api";
 import { postCheckoutData } from "../redux/Checkout/action";
+import styled from "styled-components";
 
 const Cart = () => {
   const { loading, error } = useSelector((store) => store.cartReducer);
 
   const dispatch = useDispatch();
-  const goToAddress = useNavigate()
+  const goToAddress = useNavigate();
   const [sampleData, setSampleData] = useState([]);
-  console.log(sampleData)
-
-
+  console.log(sampleData);
 
   const fetchCartAPI = async () => {
     let res = await axios.get(`https://tame-lime-hose.cyclic.app/cart`);
@@ -55,18 +54,16 @@ const Cart = () => {
   };
 
   const removeFromCart = async (id) => {
-    await deleteCartAPI(id)
-    fetchCartAPI()
+    await deleteCartAPI(id);
+    fetchCartAPI();
     window.location.reload();
-
-  }
+  };
 
   resultcount = 0;
   sampleData
     ?.filter((item) => item.isChecked === true)
     ?.map((item) => {
-      resultcount =
-        Number(resultcount) + Number(item.price) * Number(item.qty);
+      resultcount = Number(resultcount) + Number(item.price) * Number(item.qty);
       return resultcount;
     });
   resultStriked = 0;
@@ -80,9 +77,7 @@ const Cart = () => {
 
   //console.log("resultStriked", resultStriked);
 
-  const resultTotalItem = sampleData?.filter((item) => (
-    item.isChecked === true
-  ))
+  const resultTotalItem = sampleData?.filter((item) => item.isChecked === true);
   // console.log("resultTotalItem",resultTotalItem)
 
   const placeOrderObj = {
@@ -91,9 +86,6 @@ const Cart = () => {
   };
 
   // console.log(placeOrderObj);
-
-
-
 
   if (loading) {
     return (
@@ -116,16 +108,10 @@ const Cart = () => {
   });
 
   return (
-    <div>
-      <Box>
-        {/* <PaymentNavbar/> */}
-      </Box>
+    <Wrapper>
+      <Box>{/* <PaymentNavbar/> */}</Box>
 
-      <Box m={"auto"} mt={{ base: '4rem', sm: "4rem", md: '6rem', lg: '6rem' }}
-        //m={{sm:"8rem 1rem", md: "3rem 1rem", lg: "3rem 5rem" }}
-        width={{ base: "90%", sm: "90%", md: "70%", lg: "70%" }}
-      >
-
+      <Box m={"auto"} className="head">
         <Flex
           // p={{ md: "4rem 5rem", sm: "4rem 0rem", base: "4rem 0.5rem" }}
           alignItems={"flex-start"}
@@ -135,19 +121,33 @@ const Cart = () => {
           m={"auto"}
           gap={6}
         >
-          <Box width={{ base: "100%", sm: "100%", md: "60%", lg: "55%" }} margin={"auto"} mt={0} >
+          <Box
+            width={{ base: "100%", sm: "100%", md: "60%", lg: "55%" }}
+            margin={"auto"}
+            mt={0}
+          >
             <Box border={"0px solid #9e998f"}>
               <Flex
                 alignItems={"flex-start"}
                 justifyContent={"space-between"}
                 gap={2}
-                textAlign={'left'}
+                textAlign={"left"}
               >
-                <Text color={"gray.700"} fontWeight={600} noOfLines={{ base: 1, sm: 1 }} fontSize={"0.9rem"}>
+                <Text
+                  color={"gray.700"}
+                  fontWeight={600}
+                  noOfLines={{ base: 1, sm: 1 }}
+                  fontSize={"0.9rem"}
+                >
                   Check Delivery time & services
                 </Text>
                 <Button
-                  fontSize={{ base: "0.6rem", sm: '0.7rem', md: "0.8rem", lg: "0.8rem" }}
+                  fontSize={{
+                    base: "0.6rem",
+                    sm: "0.7rem",
+                    md: "0.8rem",
+                    lg: "0.8rem",
+                  }}
                   //h={"2.3rem"}
                   borderRadius={0}
                   backgroundColor={"#fff"}
@@ -167,16 +167,12 @@ const Cart = () => {
                 alignItems={"center"}
                 gap={"1rem"}
               >
-                <Text
-                  color={"gray.700"}
-                  fontWeight={600}
-                  fontSize={"0.8rem"}
-                >
+                <Text color={"gray.700"} fontWeight={600} fontSize={"0.8rem"}>
                   {`(${checkCount.length}/${sampleData.length}) ITEMS SELECTED`}
                 </Text>
               </Flex>
             </Box>
-            <Box m={"auto"}  >
+            <Box m={"auto"} className="component">
               {sampleData?.map((cart, i) => (
                 <CartComponent
                   key={i}
@@ -192,33 +188,62 @@ const Cart = () => {
             border={"0px solid gray"}
             width={{ base: "100%", sm: "100%", md: "50%", lg: "45%" }}
             p={3}
-            boxShadow={'md'}
+            boxShadow={"md"}
           >
-            <Box textAlign={"left"} borderBottom={"1px solid gray"} >
-              <Text >PRICE DETAILS ({resultTotalItem.length}{" "}item)</Text>
+            <Box textAlign={"left"} borderBottom={"1px solid gray"}>
+              <Text>PRICE DETAILS ({resultTotalItem.length} item)</Text>
             </Box>
             <Box p={"1rem 0"} borderBottom={"1px solid gray"}>
               {Object.keys(placeOrderObj).map((item) => {
                 return (
                   <Flex key={item} justifyContent={"space-between"}>
-                    <Text key={item} >{item}</Text>
+                    <Text key={item}>{item}</Text>
                     <Text>{placeOrderObj[item]}</Text>
                   </Flex>
                 );
               })}
             </Box>
-            <Button _hover={{ bgGradient:"linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))", color: "white", outline: "2px solid #e10765" }} w={"100%"} mt={"2rem"} color={"white"} bgGradient="linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))" onClick={() => {
-              goToAddress("/address");
-              localStorage.setItem('Total MRP', resultcount);
-              localStorage.setItem('DiscountPrice', resultStriked);
-            }}>PLACE ORDER</Button>
+            <Button
+              _hover={{
+                bgGradient:
+                  "linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))",
+                color: "white",
+                outline: "2px solid #e10765",
+              }}
+              w={"100%"}
+              mt={"2rem"}
+              color={"white"}
+              bgGradient="linear(to-l, rgb(222, 87, 229), rgb(136, 99, 251))"
+              onClick={() => {
+                goToAddress("/address");
+                localStorage.setItem("Total MRP", resultcount);
+                localStorage.setItem("DiscountPrice", resultStriked);
+              }}
+            >
+              PLACE ORDER
+            </Button>
           </Box>
-
-
         </Flex>
       </Box>
-    </div>
+    </Wrapper>
   );
 };
 
 export default Cart;
+
+const Wrapper = styled.section`
+  /* background-color: #f5feff;  */
+
+  .head{
+    width: 90%; 
+    margin: auto; 
+    padding: 40px 4px; 
+  } 
+
+  .component>*{
+    background-color: white;  
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.066) 0px 0px 8px;  
+    padding: 10px 10px 0 10px; 
+  }
+
+`;

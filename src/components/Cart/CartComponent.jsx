@@ -9,8 +9,7 @@ import {
   Select,
   Stack,
   Text,
-} from "@chakra-ui/react";
-
+} from "@chakra-ui/react"; 
 import React from "react";
 
 const CartComponent = ({
@@ -20,9 +19,9 @@ const CartComponent = ({
   removeFromCart,
 }) => {
   return (
-    <Box w={"100%"}>
-      <Box mb={5} border={"1px solid #B2B3C8"} borderRadius={5} w="100%">
-        <Flex
+    <Box w={"100%"} >
+      <Box mb={5} overflow="hidden" borderRadius={5} w="100%">
+        <Flex 
           direction={{ base: "column", sm: "column", md: "row", lg: "row" }}
         >
           <Stack
