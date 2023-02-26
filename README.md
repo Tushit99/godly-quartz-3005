@@ -30,7 +30,7 @@ Our mission is to make beautiful jewellery accessible. Jewellery that not only m
 # Home Page  
 <img width="711" alt="image" src="https://user-images.githubusercontent.com/97578587/221412223-64985d9f-70d4-4603-8e42-30b49c838008.png">
 
-## Admin Page (Add,Edit and Delete Product )
+## Admin Page (Add,Edit and Delete Product )  
 <img width="717" alt="image" src="https://user-images.githubusercontent.com/97578587/221413869-d661cd57-c583-434c-9857-d58311c4f50c.png">
 
 ## Product Page 
@@ -42,5 +42,7 @@ Our mission is to make beautiful jewellery accessible. Jewellery that not only m
 ## Cart Page 
 <img width="706" alt="image" src="https://user-images.githubusercontent.com/97578587/221414165-884d5b60-3973-477b-b260-3c75867e4ec6.png">
 
+## Login 
+<img width="725" alt="image" src="https://user-images.githubusercontent.com/97578587/221416317-ef29afa8-6f73-4a9c-901c-c3aae33db84b.png">
 
 
